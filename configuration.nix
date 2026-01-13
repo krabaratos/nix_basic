@@ -4,6 +4,7 @@
   imports =
     [ ./hardware-configuration.nix
     ];
+
   #Flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -38,13 +39,6 @@
 
   #System Pakcges
   environment.systemPackages = with pkgs; [
- hyprland
- wofi
- firefox
- hyprpaper
- hyprpicker
- nautilus
- waybar
  htop
  fastfetch
  ];
